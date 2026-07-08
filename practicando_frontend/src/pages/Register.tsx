@@ -28,14 +28,16 @@ function Register () {
             </h1>
             <form className="space-y-4" onSubmit={handleRegister}>
                 <div>
-                    <label className="mb-1 block font-medium" htmlFor="name">
+                    <label className="mb-1 block font-medium" htmlFor="username">
                         Nombre
                     </label>
                     <input className="w-full rounded border border-slate-300 px-3 py-2"
-                    id="name"
+                    id="username"
+                    name="username"
                     type="text"
                     placeholder="Dayron"
-                    required />
+                    required 
+                    />
                 </div>
                 <div>
                     <label className="mb-1 block font-medium" htmlFor="email">
@@ -43,7 +45,8 @@ function Register () {
                     </label>
                     <input className="w-full rounded border border-slate-300 px-3 py-2"
                     id="email"
-                    type="text"
+                    name="email"
+                    type="email"
                     placeholder="dayron.cueva@utec.edu.pe"
                     required />
                 </div>
@@ -53,7 +56,8 @@ function Register () {
                     </label>
                     <input className="w-full rounded border border-slate-300 px-3 py-2"
                     id="password"
-                    type="text"
+                    name="password"
+                    type="password"
                     placeholder="..."
                     required />
                 </div>
@@ -63,6 +67,7 @@ function Register () {
                     </label>
                     <input className="w-full rounded border border-slate-300 px-3 py-2"
                     id="fullName"
+                    name="fullName"
                     type="text"
                     placeholder="Dayron Cueva Loayza"
                     required />
