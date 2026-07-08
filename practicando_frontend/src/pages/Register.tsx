@@ -12,7 +12,7 @@ function Register () {
         const form = new FormData(e.currentTarget);
         const success = await action.execute (async()=> {
             await registerUser ({
-                name:String (form.get("username")),
+                username:String (form.get("username")),
                 email:String (form.get("email")),
                 password:String(form.get("password")),
                 fullName:String(form.get("fullName"))
